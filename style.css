@@ -62,7 +62,7 @@
     }
 
     footer{
-      text-align: start;
+      text-align: center;
     }
 
     footer a{
@@ -222,4 +222,66 @@
     #page-ideias header{
       display: flex;
       justify-content: space-between;
+    }
+    
+    #page-ideias nav{
+      display: flex;
+      align-items: center;
+    }
+
+    #page-ideias nav li{
+      list-style-type: none;
+      margin-right: 17px;
+    }
+
+    #page-ideias nav li a{
+      color: black;
+    }
+
+    #page-ideias nav li:last-child{
+      margin: 0;
+      width: 150px;
+      height: 40px;
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px; 
+    }
+
+    #page-ideias nav li:last-child a{
+      color: whitesmoke;
+      font-size: 18ssspx;
+      font-weight: bolds;
+    }
+
+    #page-ideias nav li:last-child a:hover{
+      background-color: rgb(183, 223, 228);
+      text-decoration: none;
+    }
+
+    section#title{
+      text-align: center;
+      margin: 55px 0;
+    }
+
+    section#title p{
+      opacity: 0.09px;
+      margin: 0;
+    }
+
+    section#title h1{
+      margin: 0;
+      font-size: 28px;
+    }
+
+    section#last-ideias{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+      margin-left: 100px;
+    }
+     
+    section#last-ideias .idea{
+      margin: 0;
     }
