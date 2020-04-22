@@ -6,6 +6,8 @@
   Preenchimento
   Posionamento
   */
+      
+      /*Global*/
 
   body{
     background-color: mistyrose;
@@ -13,10 +15,66 @@
     font-family: 'gotu', sans-serif;
     margin: 0;
     }
-  
+
+    body.hideScroll{
+      overflow: hidden;
+    }
+
+    a{
+      color: rosybrown;
+      font-weight: 24px;
+      text-decoration: underline;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+
+    
+    p, description{
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+
+    .button{
+      color: ivory;
+      background-color: rgb(235, 189, 213);
+      width: 75px;
+      height: 30px;
+      border-radius: 6px;
+      box-shadow: 0px 8px 17px rgb(212, 124, 170);
+    }
+
+    .button:hover{
+      text-decoration: none;
+    }
+
+    #page-ideias nav li:last-child a{
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      width: 150px;
+      height: 40px;
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px; 
+      text-decoration: none;
+    }
+
+    #page-ideias nav li:last-child a:hover{
+      background-color: rgb(183, 223, 228);
+      text-decoration: none;
+      color: white;
+    }
+
+      /*Padrão*/
+
     #container{
-      width: 80spx;
-      max-width: 980px;
+      width: 100%;
+      max-width: 1200px;
       margin-right: auto;
       margin-left: auto;
       display: flex;
@@ -50,16 +108,7 @@
 
     button:hover{
       text-decoration: underline;
-    }    
-
-    .fat{
-      color: ivory;
-      background-color: rgb(235, 189, 213);
-      width: 75px;
-      height: 30px;
-      border-radius: 6px;
-      box-shadow: 0px 8px 17px rgb(212, 124, 170);
-    }
+    }  
 
     footer{
       text-align: center;
@@ -74,18 +123,6 @@
     footer a:hover{
       color: rgb(235, 189, 213);
       font-weight: bold;
-    }
-
-    a{
-      color: rosybrown;
-      font-weight: 24px;
-      text-decoration: underline;
-    }
-
-    p, description{
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.1px;
     }
 
     .idea{
@@ -112,16 +149,21 @@
 
     #modal{
       background-color: rgb(235, 189, 213);
-      position: absolute;
       top: 0;
-      width: 100vw;
-      height: 100vw;
       display: flex;
       justify-content: center;
+      bottom: 0;
+      right:0;
+      left: 0;
+      position: absolute;
+    }
+
+    modal.addScroll{
+      overflow: auto;
     }
 
     #modal .content{
-      margin-top: 128px;
+      margin-top: 18px;
       color: lightslategrey;
     }
 
@@ -133,7 +175,7 @@
     #modal form{
       width: 80%;
       max-width: 800%;
-      margin: 0 auto;
+      margin: 0 auto 18px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
@@ -240,24 +282,6 @@
 
     #page-ideias nav li:last-child{
       margin: 0;
-      width: 150px;
-      height: 40px;
-      background-color: pink;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 9px; 
-    }
-
-    #page-ideias nav li:last-child a{
-      color: whitesmoke;
-      font-size: 18ssspx;
-      font-weight: bolds;
-    }
-
-    #page-ideias nav li:last-child a:hover{
-      background-color: rgb(183, 223, 228);
-      text-decoration: none;
     }
 
     section#title{
@@ -284,4 +308,8 @@
      
     section#last-ideias .idea{
       margin: 0;
+    }
+
+    section#title, section#ideas, footer{
+      margin-top: 64px;
     }
