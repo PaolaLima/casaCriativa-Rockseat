@@ -156,6 +156,9 @@
       right:0;
       left: 0;
       position: absolute;
+      transition: 400ms;
+      min-height: 1380px;
+      height: 100%;
     }
 
     modal.addScroll{
@@ -163,7 +166,7 @@
     }
 
     #modal .content{
-      margin-top: 18px;
+      margin-top: 10%;
       color: lightslategrey;
     }
 
@@ -174,8 +177,8 @@
 
     #modal form{
       width: 80%;
-      max-width: 800%;
-      margin: 0 auto 18px;
+      max-width: 800px;
+      margin: 0 auto 10%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
@@ -252,13 +255,14 @@
 
     #modal.hide{
       opacity: 0;
-      visibility: hidden;
+      visibility: hidden ;
     }
 
     /*Idéia.html*/
 
     #page-ideias #container{
       display: block;
+    
     }
 
     #page-ideias header{
