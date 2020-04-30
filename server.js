@@ -3,7 +3,6 @@
 
 //configurar arquivos estáticos (css, scripts, imagens)
 server.use(express.static("public"));
-
  //criei uma rota /
 //e capturo o pedido do cliente para responder
 server.get("/", function(req, res){
